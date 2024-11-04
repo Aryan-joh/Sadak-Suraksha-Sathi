@@ -4,7 +4,18 @@ import React, { useEffect, useState } from 'react';
 import {googleLogout, useGoogleLogin } from '@react-oauth/google';
 import axios from 'axios';
 function App() {
+//email password login
+const [email,setEmail]=useState('')
+const [password,setPassword]=useState('')
 
+const handleSubmit=(e)=>{
+e.preventDefault()
+console.log("email :",email)
+console.log("password :" ,password)
+setEmail('')
+setPassword('')
+}
+//google Oauth login
    const [user,setUser]=useState([])
    const [profile,setProfile]=useState()
    const login=useGoogleLogin({
@@ -30,7 +41,7 @@ setProfile(null)
    }
     return (
         <>
-          
+          { /* USER GOOGLE OAuth LOGIN */}
             {profile ? (
                 <div >
                     <img src={profile.picture} alt="user image" />
@@ -50,15 +61,55 @@ setProfile(null)
                             <div className="card-body p-5 text-center">
                             <div className="col-15 mb-5 mb-lg-0">
         
-                            <h3 className="mb-4">SADAK SURAKSHA SATHI</h3>
+                            <h3 className="mb-4">SADAK SURAKSHA SAATHI</h3>
           <p style={{color: "hsl(217, 10%, 50.8%)"}}>
-          <span style={{color:"black"}}>SADAK SURAKSHA SATHI</span> support will help more drivers understand 
+          <span style={{color:"black"}}>SADAK SURAKSHA SAATHI</span> support will help more drivers understand 
 road safety guidelines, reducing accidents and violations. Drivers can quickly understand emergency alerts in their native language, allowing faster and safer actions.
           </p>
         </div>
                                 <h3 className="mb-4">Login with your Account</h3>
 
+{ /* USER PASSWORD & EMAIL  LOGIN */}
 
+                                <form onSubmit={(e)=>{handleSubmit(e)}}>
+  {/* Email input */}
+  <div data-mdb-input-init className="form-outline mb-4">
+    <input value={email} onChange={(e)=>{setEmail(e.target.value)}} required type="email" id="form2Example1" className="form-control " placeholder="Enter your email"
+      style={{
+        borderColor: 'brown',
+        color: 'gray'
+      }}/>
+   
+  </div>
+
+  {/* Password input */}
+  <div data-mdb-input-init className="form-outline mb-4">
+    <input value={password} onChange={(e)=>{setPassword(e.target.value)}} required type="password" id="form2Example2" className="form-control"  placeholder="Enter your password"
+      style={{
+        borderColor: 'brown',
+        color: 'gray'
+      }}/>  </div>
+    <button  type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Log in</button>
+
+
+
+
+
+
+
+  {/* Register buttons */}
+  <div className="text-center">
+
+    <p>or continue with:</p>
+
+
+
+  
+  </div>
+</form>
+
+
+                                <hr className="mb-4"/>
                                 <button
                                     data-mdb-button-init
                                     data-mdb-ripple-init
