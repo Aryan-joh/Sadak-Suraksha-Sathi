@@ -1,9 +1,10 @@
-<<<<<<< HEAD
+
 # Sadak-Suraksha-Sathi
  Multilingual support will help more drivers understand road safety guidelines, reducing accidents and violations.
  
  **LOGIN PAGE**
-![image](https://github.com/user-attachments/assets/a04db995-6c22-474a-9cc2-f2a4508969d2)
+![image](https://github.com/user-attachments/assets/e94d983a-7020-407d-b676-de92076f055f)
+
 
 
 =======
