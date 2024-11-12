@@ -20,6 +20,10 @@ On clicking the links the user move to the links web pages for reading the rules
 Responsible for different types of works and provide all the related data or information on demand of user 
 It perform translation , search operation and helps in providing answer 
 
+ **CHATBOT WORK**
+ ![image](https://github.com/user-attachments/assets/a35f5150-81ae-4593-b453-0d4b4220ed8c)
+
+
 
 # For running on device :
 Firstly fork 
