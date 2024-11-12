@@ -1,0 +1,27 @@
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .card {
+    border: 1px dashed #6c757d;
+  }
+  
+  .btn-outline-primary {
+    border: 1px solid #6c757d;
+    color: #6c757d;
+  }
+  
+  .btn-secondary {
+    background-color: #e9ecef;
+    color: #6c757d;
+  }
+  
+  .dropdown-menu {
+    min-width: 100%;
+  }
+
+  
+
+
+  
